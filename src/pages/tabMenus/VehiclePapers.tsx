@@ -1,7 +1,47 @@
 import React from "react";
+import VehiclepapersTable from "../../components/tables/VehiclepapersTable";
 
 const VehiclePapers = () => {
-  return <div>VehiclePapers</div>;
+  return (
+    <div>
+      <div className="vehiclepapers_header">
+        <div>
+          <div>
+            <h1>Vehicle Papers</h1>
+            <p>
+              An aggregation of registered Vehicle Papers info from the Federal
+              Road Safety Corps.
+            </p>
+          </div>
+
+          <div>
+            <button>Download report</button>
+            <button>Download report</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <button>12 months</button>
+            <button>30 days</button>
+            <button>7 days</button>
+            <button>24 hours</button>
+          </div>
+
+          <div>
+            <button>Select dates</button>
+            <button>Filters</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="vehiclepapers_section"></div>
+
+      <div className="vehiclepapers_tablesection">
+        <VehiclepapersTable />
+      </div>
+    </div>
+  );
 };
 
 export default VehiclePapers;

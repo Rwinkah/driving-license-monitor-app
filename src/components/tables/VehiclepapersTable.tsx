@@ -1,9 +1,9 @@
 import React from "react";
 
-const DriversLicenseTable = () => {
+const VehiclePapersTable = () => {
   return (
     <div>
-      <div className="driverslicense_title">
+      <div className="VehiclePaper_title">
         <div>
           <p>
             Registered persons{" "}
@@ -18,8 +18,8 @@ const DriversLicenseTable = () => {
           <button>export</button>
         </div>
       </div>
-      <div className="driverslicense_table">
-        <div className="driverslicense_table_header"></div>
+      <div className="VehiclePaper_table">
+        <div className="VehiclePaper_table_header"></div>
         <table>
           <tr>
             <th>Full name</th>
@@ -46,7 +46,7 @@ const DriversLicenseTable = () => {
             </td>
           </tr>
         </table>
-        <div className="driverslicense_table_bottom">
+        <div className="VehiclePaper_table_bottom">
           <div>
             <p>Page 1 of 1,234</p>
           </div>
@@ -60,4 +60,4 @@ const DriversLicenseTable = () => {
   );
 };
 
-export default DriversLicenseTable;
+export default VehiclePapersTable;
