@@ -16,7 +16,7 @@ const VehiclePapers = () => {
 
           <div>
             <button>Download report</button>
-            <button>Download report</button>
+            <button>Register a user</button>
           </div>
         </div>
 
