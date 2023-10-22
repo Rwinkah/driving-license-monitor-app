@@ -1,8 +1,9 @@
 import React from "react";
+import "../../styles/DriversLicenseTable.scss"
 
 const DriversLicenseTable = () => {
   return (
-    <div>
+    <div className="driverslicense_body">
       <div className="driverslicense_title">
         <div>
           <p>
