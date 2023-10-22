@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <>
       <Tabs
-        className="tabs no-border"
+        className="tabs no-border maintab"
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
       >
