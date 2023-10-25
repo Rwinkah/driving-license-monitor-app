@@ -8,14 +8,10 @@ const DriversLicenseTable = () => {
 
   useEffect(() => {
     fetchDrivers();
-  }, []);
-
-  useEffect(() => {
-    fetchDrivers();
   }, [page]);
 
   const fetchDrivers = async () => {
-    const drivers: DriverData[] = await DriversApi(page);
+    const drivers: DriverData[] = await DriversApi(page, 10);
 
     setDrivers(drivers[0].drivers);
   };

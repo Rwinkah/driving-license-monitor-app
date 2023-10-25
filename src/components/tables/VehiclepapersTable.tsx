@@ -8,7 +8,7 @@ const VehiclePapersTable = () => {
 
   useEffect(() => {
     fetchDrivers();
-  }, []);
+  }, [page]);
 
   const fetchDrivers = async () => {
     const drivers: DriverData[] = await DriversApi(page);

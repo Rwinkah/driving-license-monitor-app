@@ -1,5 +1,5 @@
 import data from "./mockdata/drivers_data_final.json";
-import { DriverData } from "../types/drivers_data_interface";
+import { Driver, DriverData } from "../types/drivers_data_interface";
 
 export const DriversApi = (page = 1, limit = 10): Promise<DriverData[]> => {
   return new Promise((resolve, reject) => {
@@ -16,11 +16,13 @@ export const DriversApi = (page = 1, limit = 10): Promise<DriverData[]> => {
 
       // Slice the data to return only the entries for the current page
       // const paginatedData = driversData.slice(startIndex, endIndex);
+      let slicedData: Driver[] = [];
+
       driversData.forEach((driver) => {
-        driver.drivers = driver.drivers.slice(startIndex, endIndex);
+        slicedData = driver.drivers.slice(startIndex, endIndex);
       });
 
-      const paginatedData = driversData;
+      const paginatedData = [{ drivers: slicedData }];
 
       resolve(paginatedData as DriverData[]);
     }, 1000);
