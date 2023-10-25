@@ -98,7 +98,7 @@ const hasValidLicense = (driver: Driver): boolean => {
   const license = driver.driverLicense;
   return (
     license &&
-    license.status === "Valid" && // You can adjust this condition as needed
+    license.status === "Permanent" && // You can adjust this condition as needed
     license.expiresOn >= getCurrentDate() // Assuming 'expiresOn' is a date string
   );
 };

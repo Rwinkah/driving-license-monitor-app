@@ -1,5 +1,6 @@
 import React from "react";
 import VehiclepapersTable from "../../components/tables/VehiclepapersTable";
+import { VehiclePaperSection } from "../../components/sections";
 
 const VehiclePapers = () => {
   return (
@@ -35,7 +36,7 @@ const VehiclePapers = () => {
         </div>
       </div>
 
-      <div className="vehiclepapers_section"></div>
+      <VehiclePaperSection />
 
       <div className="vehiclepapers_tablesection">
         <VehiclepapersTable />
