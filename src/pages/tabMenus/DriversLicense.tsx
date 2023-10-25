@@ -1,5 +1,6 @@
 import React from "react";
-import DriversLicenseTable from "../../components/tables/DriversLicenseTable";
+import { DriversLicenseTable } from "../../components/tables";
+import { DriversLicenseSection } from "../../components/sections";
 
 const DriversLicense = () => {
   return (
@@ -35,7 +36,7 @@ const DriversLicense = () => {
         </div>
       </div>
 
-      <div className="driverslicense_section"></div>
+      <DriversLicenseSection />
 
       <div className="driverslicense_tablesection">
         <DriversLicenseTable />
