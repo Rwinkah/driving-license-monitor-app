@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import NavConfig from "./providers/navigation/NavConfig";
-import "./styles/Main.scss";
+import "./styles/main.scss";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
