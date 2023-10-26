@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { DriversApi } from "../../api";
+import { Driver, DriverData } from "../../types/drivers_data_interface";
 
 const RenewalsTable = () => {
+  const [getDrivers, setDrivers] = useState<Driver[]>([]);
+  const [page, setPage] = useState<number>(1);
+
+  useEffect(() => {
+    fetchDrivers();
+  }, [page]);
+
+  const fetchDrivers = async () => {
+    const drivers: DriverData[] = await DriversApi(page);
+
+    setDrivers(drivers[0].drivers);
+  };
+
   return (
     <div>
       <div className="DocumentRenewal_title">
@@ -18,38 +33,53 @@ const RenewalsTable = () => {
       <div className="DocumentRenewal_table">
         <div className="DocumentRenewal_table_header"></div>
         <table>
-          <tr>
-            <th>Full name</th>
-            <th>Document number</th>
-            <th>Class</th>
-            <th>Date of 1st Issue</th>
-            <th>Issued on</th>
-            <th>Expires on</th>
-            <th>State</th>
-            <th>Status</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td>John Doe</td>
-            <td>123456789</td>
-            <td>A</td>
-            <td>01/01/2020</td>
-            <td>01/01/2020</td>
-            <td>01/01/2020</td>
-            <td>Lagos</td>
-            <td>Active</td>
-            <td>
-              <button>View</button>
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Full name</th>
+              <th>Phone number</th>
+              <th>Document number</th>
+              <th>State</th>
+              <th>Document name</th>
+              <th>Issued on</th>
+              <th>Expires on</th>
+            </tr>
+          </thead>
+          <tbody>
+            {getDrivers.map((driver) => (
+              <tr key={driver.id}>
+                <td></td>
+                <td>{driver.fullName}</td>
+                <td>{driver.phoneNumber}</td>
+                <td>{driver.vehicles[0].documents[0].documentNumber}</td>
+                <td>{driver.vehicles[0].documents[0].state}</td>
+                <td>{driver.vehicles[0].documents[0].documentName}</td>
+                <td>{driver.vehicles[0].documents[0].issuedOn}</td>
+                <td>{driver.vehicles[0].documents[0].expiresOn}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
         <div className="DocumentRenewal_table_bottom">
           <div>
-            <p>Page 1 of 1,234</p>
+            <p>{`Page ${page} of 1,234`}</p>
           </div>
           <div>
-            <button>Previous</button>
-            <button>Next</button>
+            <button
+              onClick={() => {
+                if (page === 1) return;
+                setPage(page - 1);
+              }}
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => {
+                setPage(page + 1);
+              }}
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
