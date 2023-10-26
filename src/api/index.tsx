@@ -1,5 +1,10 @@
 import data from "./mockdata/drivers_data_final.json";
-import { DriverData, Driver, Document } from "../types/drivers_data_interface";
+import {
+  DriverData,
+  Driver,
+  Document,
+  Vehicle,
+} from "../types/drivers_data_interface";
 
 export const DriversApi = (page = 1, limit = 10): Promise<DriverData[]> => {
   return new Promise((resolve, reject) => {
@@ -75,6 +80,47 @@ export const getDriversWithExpiringDocuments = (): number => {
   });
 
   return count;
+};
+
+export const getDriversWithValidVehiclePapers = (): number => {
+  const driversData = data as DriverData[];
+  let count = 0;
+
+  driversData.forEach((driverData) => {
+    const drivers = driverData.drivers;
+    for (const driver of drivers) {
+      for (const vehicle of driver.vehicles) {
+        if (hasValidVehiclePapers(vehicle)) {
+          count++;
+          break; // If any vehicle has valid papers, count the person and exit the loop
+        }
+      }
+    }
+  });
+
+  return count;
+};
+
+// Helper function to check if a vehicle has valid papers
+const hasValidVehiclePapers = (vehicle: Vehicle): boolean => {
+  for (const document of vehicle.documents) {
+    if (isDocumentValid(document)) {
+      return true; // If any document is valid, the papers are valid
+    }
+  }
+  return false;
+};
+
+// Helper function to check if a document is valid
+const isDocumentValid = (document: Document): boolean => {
+  if (document.expiresOn) {
+    const expirationDate = new Date(document.expiresOn);
+    const currentDate = new Date();
+
+    return expirationDate >= currentDate; // Assuming a document is valid if it hasn't expired yet
+  }
+
+  return false; // Handle the case where 'expiresOn' is missing or invalid
 };
 
 // Helper function to check if a document will expire within the next 6 months

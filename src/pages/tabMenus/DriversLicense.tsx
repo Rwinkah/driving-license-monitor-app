@@ -39,7 +39,7 @@ const DriversLicense = () => {
       <DriversLicenseSection />
 
       <div className="driverslicense_tablesection">
-        <DriversLicenseTable />
+        <DriversLicenseTable /> 
       </div>
     </div>
   );
