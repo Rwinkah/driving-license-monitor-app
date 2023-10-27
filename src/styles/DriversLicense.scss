@@ -1,7 +1,6 @@
 @import "./breakpoints";
 @import "./fonts";
 @import "./theme.scss";
-@import "./colors.scss";
 
 .driverslicense {
     box-sizing: border-box;
@@ -21,7 +20,7 @@
                     font-weight: 600;
                     font-size: 1.875rem;
                     line-height: 2.375rem;
-                    color: $h1_drvlicense;
+                    color:  black;
                 }
 
                 p {
@@ -151,5 +150,52 @@
                 }
             }
         }
+    }
+}
+
+.driverslicense_header_timeline {
+    display: flex;
+    justify-content: space-between;
+    &_dates {
+        display: flex;
+        border: 1px #D0D5DD solid;
+        border-radius: 0.5rem;
+        height: 40px;
+        width: 413px;
+        padding-left: 0.1rem;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+
+        button {
+            border: 1px solid #D0D5DD;
+            border-left: 0px;
+            width: 103px;
+            height: 38px;
+            border-top: 0;
+            border-bottom: 0;
+            background-color: white;
+            font-family: $Inter;
+            font-weight: 600;
+            font-size: 0.875rem;
+
+         }
+
+    }
+
+    &_buttons {
+        display: flex;
+        width: 17rem;
+        justify-content: space-between;
+
+        button {
+            width: 8.06rem;
+            border: 1px solid #D0D5DD;
+            background-color: white;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+          }
+        
+
     }
 }

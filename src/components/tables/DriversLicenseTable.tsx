@@ -1,18 +1,19 @@
 import React from "react";
+import "../../styles/DriversLicenseTable.scss";
 
 const DriversLicenseTable = () => {
   return (
-    <div>
+    <div className="driverslicense_body">
       <div className="driverslicense_title">
-        <div>
-          <p>
-            Registered persons{" "}
+        <div className="driverslicense_title_header">
+          <h3>
+            Registered persons{"  "}
             <span>2,345 new registrations in the last quarter </span>
-            <span>
+            <h6>
               Persons with licenses registered with the Federal Road Safety
               Corps.
-            </span>
-          </p>
+            </h6>
+          </h3>
         </div>
         <div>
           <button>export</button>
