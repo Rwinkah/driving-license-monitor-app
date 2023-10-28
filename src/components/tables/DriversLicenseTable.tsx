@@ -1,7 +1,21 @@
-import React from "react";
-import "../../styles/DriversLicenseTable.scss";
+import React, { useEffect, useState } from "react";
+import { DriversApi } from "../../api";
+import { Driver, DriverData } from "../../types/drivers_data_interface";
 
 const DriversLicenseTable = () => {
+  const [getDrivers, setDrivers] = useState<Driver[]>([]);
+  const [page, setPage] = useState<number>(1);
+
+  useEffect(() => {
+    fetchDrivers();
+  }, [page]);
+
+  const fetchDrivers = async () => {
+    const drivers: DriverData[] = await DriversApi(page, 10);
+
+    setDrivers(drivers[0].drivers);
+  };
+
   return (
     <div className="driverslicense_body">
       <div className="driverslicense_title">
