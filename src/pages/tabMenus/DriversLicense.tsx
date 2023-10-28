@@ -34,6 +34,30 @@ const DriversLicense = () => {
             <button>Filters</button>
           </div>
         </div>
+
+        <div className="driverslicense_header_statistics">
+          <div className="stats stat1">
+            <h3>Persons with drivers license</h3>
+            <div className="bottomstat">
+              <span className="bigstat">12,156,080</span>
+              <span className="tinystat green">+1.3%</span>
+            </div>
+          </div>
+          <div className="stats stat2">
+            <h3>Persons with drivers license</h3>
+            <div className="bottomstat">
+              <span className="bigstat">8,166,091</span>
+              <span className="tinystat red">+1.3%</span>
+            </div>
+          </div>
+          <div className="stats stat3">
+            <h3>Persons whose documents expire in 6 months</h3>
+            <div className="bottomstat">
+              <span className="bigstat">4,784,097</span>
+              <span className="tinystat neutral">+3.8%</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="driverslicense_section"></div>

@@ -195,7 +195,75 @@
             height: 2.5rem;
             border-radius: 0.5rem;
           }
-        
-
     }
+}
+
+
+.driverslicense_header_statistics {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+
+    h3 {
+        font-family: Inter;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .stats {
+        box-sizing: border-box;
+        gap: 1rem;
+        border: 1px solid #EAECF0;
+        border-radius: 0.8rem;
+        padding: 1.5rem;
+    }
+
+
+    .bottomstat {
+        box-sizing: border-box;
+        display: flex;
+        gap: 4rem;
+
+        .bigstat {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .tinystat {
+            box-sizing: border-boxS;
+            width: 4rem;
+            height:  auto;
+            padding: 2, 10, 2, 8;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #EAECF0;
+            padding-left: 0.5rem;
+        }
+    }
+}
+
+
+.green {
+    background-color:  #ECFDF3;
+    color:  #027A48;
+}
+
+.red {
+    background-color: #FEF3F2;
+    color: #B42318;
+}
+
+.neutral {
+    background-color: #F2F4F7;
+    color: #667085;
+    
 }

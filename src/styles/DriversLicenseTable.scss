@@ -3,7 +3,6 @@
 @import "./theme.scss";
 
 .driverslicense_body {
-    padding: 2rem;
     padding-top: 1rem;
     border: 1px solid #D0D5DD;
     border-radius: 0.5rem;
@@ -13,8 +12,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid #EAECF0;
+    padding: 2rem;
+    padding-top: 1rem;
 
     &_header {
+
 
 
         h3 {
@@ -75,6 +78,7 @@
             &._firstrow {
                 border: 1px solid #EAECF0;
                 background-color: #FCFCFD;
+                height: 44px;
             }
 
             td {
@@ -98,6 +102,12 @@
                 position: relative;
                 box-sizing: border-box;
                 height: 2rem;
+                font-family: $Inter;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
             }
 
             ._name {
@@ -131,13 +141,13 @@
             }
 
             ._status {
-                min-width: 12.2rem;
+                min-width: 10.2rem;
             }
 
             ._view {
                 width: 0.1rem;
                 padding-left: 0;
-                border-right: 0;
+                border: 0;
                 transform: rotate(90deg);
 
                 h6 {
@@ -148,4 +158,44 @@
             }
         }
     }
+}
+
+.driverslicense_table_bottom {
+    display: flex;
+    justify-content: space-between;
+    height:  4rem;  
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    // padding-top: 1.5rem;
+    border-top: 1px solid #EAECF0 ;
+    align-items: center;
+
+    .paging {
+        display: flex;
+        gap: 1rem;
+    
+            p.pagenum {
+                font-family: $Inter;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding-left: 0.5rem;
+            }
+
+            button {
+                background-color: white;
+                width: 5.5rem;
+                height: 2.5rem;
+                padding-left: 8px;
+                padding-top: 14px;
+                padding-right: 8px;
+                padding-bottom: 14px;
+                border-radius: 8px;
+                border: 1px solid #D0D5DD;
+                gap: 8px;
+            }
+        }
+
 }
