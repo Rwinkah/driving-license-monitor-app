@@ -1,0 +1,276 @@
+@import './breakpoints';
+@import './fonts';
+@import './DriversLicenseTable.scss';
+@import './DriversLicense.scss';
+.pagebody {
+    box-sizing: border-box;
+    width: 100%;
+
+    .pagebody_header {
+        &_top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+
+            &_text {
+                h1 {
+                    font-family: $Inter;
+                    font-weight: 600;
+                    font-size: 1.875rem;
+                    line-height: 2.375rem;
+                    color: black;
+                }
+
+                p {
+                    size: 1rem;
+                    font-family: $Inter;
+                    font-weight: 400;
+                    line-height: 0.5px;
+                }
+            }
+
+            &_filters {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+
+                button {
+                    width: 10.875rem;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    border-radius: 0.3rem;
+                    height: 2.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+
+                    &.button_report {
+                        background-color: #fff;
+                        font-family: $Inter;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+                        border: 1px solid #D0D5DD;
+
+                        div.button_report_icon {
+                            width: 10rem;
+                            background-size: cover;
+                        }
+                    }
+
+                    &.button_register {
+                        background-color: black;
+                        color: white;
+                        font-family: $Inter;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+
+                    }
+                }
+            }
+        }
+
+        &_middle {
+            display: flex;
+
+            .midcont {
+
+                box-sizing: border-box;
+                width: 368px;
+                padding: 1.5rem;
+                border: 1px solid #EAECF0;
+                margin-right: 1.5rem;
+                border-radius: 0.5rem;
+                max-height: 5rem;
+
+                h3 {
+                    font-family: $Inter;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 10px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                .pagebody_header_middle_left_bottom {
+                    display: flex;
+                    gap: 3rem;
+
+                }
+
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+
+            &_timeline {
+                display: flex;
+                border: 1px #D0D5DD solid;
+                border-radius: 0.5rem;
+                height: 40px;
+                width: 413px;
+                padding-left: 0.1rem;
+                align-content: center;
+                flex-wrap: wrap;
+
+                button {
+                    border: 1px solid #D0D5DD;
+                    border-left: 0px;
+                    width: 103px;
+                    height: 38px;
+                    border-top: 0;
+                    border-bottom: 0;
+                    background-color: white;
+                    font-family: $Inter;
+                    font-weight: 600;
+                    font-size: 0.875;
+
+                    &.buttonlast {
+                        border-right: 0px;
+                    }
+                }
+
+            }
+
+            &_filters {
+                display: flex;
+                width: 17rem;
+                justify-content: space-between;
+
+                button {
+                    width: 8.06rem;
+                    border: 1px solid #D0D5DD;
+                    background-color: white;
+                    height: 2.5rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.pagebody_header_timeline {
+    display: flex;
+    justify-content: space-between;
+
+    &_dates {
+        display: flex;
+        border: 1px #D0D5DD solid;
+        border-radius: 0.5rem;
+        height: 40px;
+        width: 413px;
+        padding-left: 0.1rem;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+
+        button {
+            border: 1px solid #D0D5DD;
+            border-left: 0px;
+            width: 103px;
+            height: 38px;
+            border-top: 0;
+            border-bottom: 0;
+            background-color: white;
+            font-family: $Inter;
+            font-weight: 600;
+            font-size: 0.875rem;
+
+        }
+
+    }
+
+    &_buttons {
+        display: flex;
+        width: 17rem;
+        justify-content: space-between;
+
+        button {
+            width: 8.06rem;
+            border: 1px solid #D0D5DD;
+            background-color: white;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+
+.pagebody_header_statistics {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+
+    h3 {
+        font-family: Inter;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .stats {
+        box-sizing: border-box;
+        gap: 1rem;
+        border: 1px solid #EAECF0;
+        border-radius: 0.8rem;
+        padding: 1.5rem;
+    }
+
+
+    .bottomstat {
+        box-sizing: border-box;
+        display: flex;
+        gap: 4rem;
+
+        .bigstat {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .tinystat {
+            box-sizing: border-boxS;
+            width: 4rem;
+            height: auto;
+            padding: 2, 10, 2, 8;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #EAECF0;
+            padding-left: 0.5rem;
+        }
+    }
+}
+
+
+.green {
+    background-color: #ECFDF3;
+    color: #027A48;
+}
+
+.red {
+    background-color: #FEF3F2;
+    color: #B42318;
+}
+
+.neutral {
+    background-color: #F2F4F7;
+    color: #667085;
+
+}
+
+
+.pagebody_section {
+    display: flex;
+    justify-content: space-between;
+}

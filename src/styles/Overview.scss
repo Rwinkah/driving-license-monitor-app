@@ -1,0 +1,8 @@
+@import './breakpoints';
+@import './fonts';
+@import './theme.scss';
+
+.metrics_section {
+    display: flex  !important;
+    justify-content: space-between ;
+}

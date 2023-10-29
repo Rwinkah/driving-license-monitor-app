@@ -1,0 +1,27 @@
+@import './breakpoints';
+@import './fonts';
+@import './theme.scss';
+
+.stats {
+    box-sizing: border-box;
+    gap: 1rem;
+    border: 1px solid #EAECF0;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    width: 20rem;
+
+        h3 {
+                font-family: Inter;
+                font-size: 0.8rem;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+}
+
+
+.metrics_section {
+    display: flex;
+    justify-content: space-between;
+}

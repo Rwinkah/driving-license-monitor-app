@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "../../styles/Metrics.scss";
+
 import {
   getDriversCount,
   getDriversWithExpiringDocuments,
@@ -29,7 +31,7 @@ const OverviewSection = () => {
     setNoValidVehiclePapers(validVehiclePapersCount);
   };
   return (
-    <div className="overview_setion">
+    <div className="metrics_setion">
       <MetricCard title="Persons with drivers licenses" value={noDrivers} />
       <MetricCard title="Persons with vehicle papers" value={noDrivers} />
       <MetricCard

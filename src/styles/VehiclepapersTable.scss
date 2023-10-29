@@ -1,0 +1,76 @@
+@import './breakpoints';
+@import './fonts';
+@import './theme.scss';
+
+
+table.maintable {
+
+    thead {
+        tr {
+            justify-content: space-between;
+            gap: 0;
+            // width: 100%;
+        }
+        th {
+            padding-left: 0;
+            width: 10rem;
+            &._checkbox {
+                width: 1rem;
+            }
+        }
+    }
+    tbody {
+        tr {
+            // justify-content: space-between;
+            gap: 0;
+        }
+        td {
+
+
+            // margin-right: 3rem;
+
+
+            &._drivername {
+                margin-right: 3rem;
+            }
+
+            &._phoneno {
+                margin-right: 2rem;
+            }
+            
+            &._plateno {
+                margin-right: 2rem;
+            }
+
+            &._state {
+                margin-right: 1rem;
+            }
+            &._valid {
+                box-sizing: border-box;
+                padding-left: 1rem;
+                margin-right: 3rem;
+            }
+            &._class {
+                width: 10rem;
+                margin-right: 3rem;
+                box-sizing: border-box;
+                align-content: center;
+                padding-left: 2.3rem;
+            }
+
+            &._checkbox {
+                width: 1rem;
+                padding: 0;
+                margin-right: 0;
+            }
+
+            width: 10rem;
+            align-content: center;
+            
+        }
+    }
+}
+
+.vehiclepagenum {
+    margin-left: 1rem;
+}

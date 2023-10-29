@@ -26,7 +26,7 @@ const DriversLicenseSection = () => {
   };
 
   return (
-    <div className="driverslicense_section">
+    <div className="metrics_section">
       <MetricCard title="Persons with drivers licenses" value={noDrivers} />
       <MetricCard
         title="Persons with valid drivers licenses"
