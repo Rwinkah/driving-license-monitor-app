@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { DriversApi } from "../../api";
 import { Driver, DriverData } from "../../types/drivers_data_interface";
-import '../../styles/VehiclepapersTable.scss'
+import "../../styles/VehiclepapersTable.scss";
 
 const VehiclePapersTable = () => {
   const [getDrivers, setDrivers] = useState<Driver[]>([]);
@@ -72,7 +72,7 @@ const VehiclePapersTable = () => {
           <div className="paging vehiclepagenum">
             <p className="pagenum">{`Page ${page} of 1,234`}</p>
           </div>
-          <div className="paging"> 
+          <div className="paging">
             <button
               onClick={() => {
                 if (page === 1) return;

@@ -1,6 +1,7 @@
 import React from "react";
 import OverviewSection from "../../components/sections/OverviewSection";
 import "../../styles/Overview.scss";
+
 const Overview = () => {
   return (
     <div className="pagebody">

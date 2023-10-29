@@ -1,10 +1,7 @@
 import React from "react";
-
-import "../../styles/DriversLicense.scss";
-
 import { DriversLicenseTable } from "../../components/tables";
 import { DriversLicenseSection } from "../../components/sections";
-
+import "../../styles/DriversLicense.scss";
 
 const DriversLicense = () => {
   return (
@@ -38,7 +35,6 @@ const DriversLicense = () => {
             <button>Filters</button>
           </div>
         </div>
-
       </div>
 
       <DriversLicenseSection />
