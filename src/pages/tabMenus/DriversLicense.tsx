@@ -1,11 +1,11 @@
 import React from "react";
-<<<<<<< HEAD
+
 import DriversLicenseTable from "../../components/tables/DriversLicenseTable";
 import "../../styles/DriversLicense.scss";
-=======
+
 import { DriversLicenseTable } from "../../components/tables";
 import { DriversLicenseSection } from "../../components/sections";
->>>>>>> df033a60bc2dccb47d537927bcbb6a4a15fc3bb9
+
 
 const DriversLicense = () => {
   return (

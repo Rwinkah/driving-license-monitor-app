@@ -17,7 +17,7 @@ const VehiclePapersTable = () => {
   };
 
   return (
-    <div>
+    <div className="VehiclePaper">
       <div className="VehiclePaper_title">
         <div>
           <p>

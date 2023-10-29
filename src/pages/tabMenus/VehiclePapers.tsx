@@ -4,7 +4,7 @@ import { VehiclePaperSection } from "../../components/sections";
 
 const VehiclePapers = () => {
   return (
-    <div>
+    <div className="vehiclepapers">
       <div className="vehiclepapers_header">
         <div>
           <div>
