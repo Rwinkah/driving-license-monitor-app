@@ -28,11 +28,10 @@ a:hover {
 }
 .main-content {
   display: flex;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   gap: 1rem;
   justify-content: center;
   @include tablet {
     background-color: white;
   }
 }
-

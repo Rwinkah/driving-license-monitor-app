@@ -39,7 +39,7 @@ const DriversLicenseTable = () => {
         <table>
           <thead>
             <tr className="_firstrow">
-              {/* <th></th> */}
+              {/* <th></th> */} 
               <th className="_name">Full name</th>
               <th className="_docno">Document number</th>
               <th className="_class">Class</th>
