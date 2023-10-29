@@ -31,7 +31,7 @@ const VehiclePapersTable = () => {
           </h3>
         </div>
         <div>
-          <button>export</button>
+          <button>Export</button>
         </div>
       </div>
       <div className="tablebody_table">
