@@ -36,7 +36,7 @@ const Renewals = () => {
         </div>
       </div>
 
-    <RenewalSection />
+      <RenewalSection />
 
       <div className="renewals_tablesection">
         <RenewalsTable />
