@@ -2,11 +2,11 @@
 @import "./fonts";
 @import "./theme.scss";
 
-.driverslicense {
+.pagebody {
     box-sizing: border-box;
     width: 100%;
 
-    .driverslicense_header {
+    .pagebody_header {
         &_top {
             display: flex;
             flex-direction: row;
@@ -92,7 +92,7 @@
                     text-align: left;
                 }
 
-                .driverslicense_header_middle_left_bottom {
+                .pagebody_header_middle_left_bottom {
                     display: flex;
                     gap: 3rem;
 
@@ -153,7 +153,7 @@
     }
 }
 
-.driverslicense_header_timeline {
+.pagebody_header_timeline {
     display: flex;
     justify-content: space-between;
     &_dates {
@@ -199,7 +199,7 @@
 }
 
 
-.driverslicense_header_statistics {
+.pagebody_header_statistics {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -266,4 +266,10 @@
     background-color: #F2F4F7;
     color: #667085;
     
+}
+
+
+.metrics_section {
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { DriversApi } from "../../api";
 import { Driver, DriverData } from "../../types/drivers_data_interface";
+import "../../styles/DriversLicenseTable.scss";
 
 const DriversLicenseTable = () => {
   const [getDrivers, setDrivers] = useState<Driver[]>([]);
@@ -17,9 +18,9 @@ const DriversLicenseTable = () => {
   };
 
   return (
-    <div className="driverslicense_body">
-      <div className="driverslicense_title">
-        <div className="driverslicense_title_header">
+    <div className="tablebody">
+      <div className="tablebody_title">
+        <div className="tablebody_title_header">
           <h3>
             Registered persons{"  "}
             <span>2,345 new registrations in the last quarter </span>
@@ -33,8 +34,8 @@ const DriversLicenseTable = () => {
           <button>export</button>
         </div>
       </div>
-      <div className="driverslicense_table">
-        <div className="driverslicense_table_header"></div>
+      <div className="tablebody_table">
+        <div className="tablebody_table_header"></div>
         <table>
           <tr className="_firstrow">
             <th className="_name">Full name</th>
@@ -61,7 +62,7 @@ const DriversLicenseTable = () => {
             </td>
           </tr>
         </table>
-        <div className="driverslicense_table_bottom">
+        <div className="tablebody_table_bottom">
           <div className="paging">
             <p className="pagenum">Page 1 of 1,234</p>
           </div>

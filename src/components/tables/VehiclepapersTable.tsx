@@ -17,30 +17,30 @@ const VehiclePapersTable = () => {
   };
 
   return (
-    <div className="VehiclePaper">
-      <div className="VehiclePaper_title">
-        <div>
-          <p>
+    <div className="tablebody">
+      <div className="tablebody_title">
+        <div className="tablebody_title_header">
+          <h3>
             Registered persons{" "}
             <span>2,345 new registrations in the last quarter </span>
-            <span>
+            <h6>
               Persons with licenses registered with the Federal Road Safety
               Corps.
-            </span>
-          </p>
+            </h6>
+          </h3>
         </div>
         <div>
           <button>export</button>
         </div>
       </div>
-      <div className="VehiclePaper_table">
-        <div className="VehiclePaper_table_header"></div>
+      <div className="tablebody_table">
+        <div className="tablebody_table_header"></div>
         <table>
           <thead>
-            <tr>
+            <tr className="_firstrow">
               <th></th>
-              <th>Full name</th>
-              <th>Phone number</th>
+              <th className="_name">Full name</th>
+              <th className="_docno">Phone number</th>
               <th>Plate number</th>
               <th>State</th>
               <th>Class</th>
@@ -64,7 +64,7 @@ const VehiclePapersTable = () => {
             ))}
           </tbody>
         </table>
-        <div className="VehiclePaper_table_bottom">
+        <div className="tablebody_table_bottom">
           <div>
             <p>{`Page ${page} of 1,234`}</p>
           </div>
