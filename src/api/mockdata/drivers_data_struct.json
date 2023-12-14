@@ -1,0 +1,47 @@
+[
+  {
+    "drivers": [
+      {
+        "id": "1",
+        "fullName": "Toke Okafor",
+        "dateOfBirth": "1970-08-23",
+        "gender": "Male",
+        "nationalIdentificationNumber": "26404970490",
+        "phoneNumber": "07087683976",
+        "emailAddress": "toke.okafor@gmail.com",
+        "driverLicense": {
+          "name": "Driver's license",
+          "documentNumber": "CAH3851YE",
+          "status": "Temporary",
+          "state": "Kogi",
+          "dateOfFirstIssue": "2003-02-01",
+          "issuedOn": "2021-12-17",
+          "expiresOn": "2022-06-15"
+        },
+        "vehicleIDs": ["1", "2"]
+      }
+    ],
+
+    "vehicles": [
+      {
+        "id": "1",
+        "plateNumber": "UNY 025 HF",
+        "class": "D",
+        "documentsIDs": ["1", "2", "3"]
+      }
+    ],
+
+    "documents": [
+      {
+        "id": "1",
+        "documentName": "Vehicle license",
+        "documentNumber": "WHH5141EE",
+        "status": "Temporary",
+        "state": "Delta",
+        "dateOfFirstIssue": "2014-02-17",
+        "issuedOn": "2014-02-17",
+        "expiresOn": "2014-08-16"
+      }
+    ]
+  }
+]
