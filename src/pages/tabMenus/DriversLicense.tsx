@@ -3,7 +3,7 @@ import { DriversLicenseTable } from "../../components/tables";
 import { DriversLicenseSection } from "../../components/sections";
 import "../../styles/DriversLicense.scss";
 
-const DriversLicense = () => { 
+const DriversLicense = () => {
   return (
     <div className="pagebody">
       <div className="pagebody_header">

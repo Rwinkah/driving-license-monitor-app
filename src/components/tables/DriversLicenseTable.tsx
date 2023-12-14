@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { DriversApi } from "../../api";
 import { Driver, DriverData } from "../../types/drivers_data_interface";
 import "../../styles/DriversLicenseTable.scss";
 
 const DriversLicenseTable = () => {
+  const navigate = useNavigate();
   const [getDrivers, setDrivers] = useState<Driver[]>([]);
   const [page, setPage] = useState<number>(1);
 
@@ -70,7 +72,7 @@ const DriversLicenseTable = () => {
                 <td className="_state">{driver.driverLicense.state}</td>
                 <td className="_status">{driver.driverLicense.status}</td>
                 <td>
-                  <button className="_view">...</button>
+                  <button className="_view" onClick={() => navigate('')}>...</button>
                 </td>
               </tr>
             ))}

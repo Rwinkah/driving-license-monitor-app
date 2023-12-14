@@ -1,7 +1,7 @@
 import React from "react";
 
-const DriversDetails = () => {
+const DriversDetailsSection = () => {
   return <div></div>;
 };
 
-export default DriversDetails;
+export default DriversDetailsSection;
