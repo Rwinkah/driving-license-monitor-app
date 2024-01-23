@@ -25,6 +25,7 @@
     "vehicles": [
       {
         "id": "1",
+        "vehicleMakeModelCategory": "Isuzu Regular Cab (Pickup)",
         "plateNumber": "UNY 025 HF",
         "class": "D",
         "documentsIDs": ["1", "2", "3"]
@@ -33,14 +34,14 @@
 
     "documents": [
       {
-        "id": "1",
         "documentName": "Vehicle license",
         "documentNumber": "WHH5141EE",
         "status": "Temporary",
         "state": "Delta",
         "dateOfFirstIssue": "2014-02-17",
         "issuedOn": "2014-02-17",
-        "expiresOn": "2014-08-16"
+        "expiresOn": "2014-08-16",
+        "id": "1"
       }
     ]
   }
