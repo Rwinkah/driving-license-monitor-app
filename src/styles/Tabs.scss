@@ -3,12 +3,12 @@
 @import "./theme.scss";
 
 .tabs {
-  border-radius: $border-radius-large;
-  border: 1px solid $text-fade;
+  // border-radius: $border-radius-large;
+  // border: 1px solid $text-fade;
   box-shadow: 1px 4px 45px rgba(0, 0, 0, 0.08);
-  width: 99vw;
-  margin-left: 0.5vw;
-  margin-top: 0.5vw;
+  width: 100vw;
+  // margin-left: 0.5vw;
+  // margin-top: 0.5vw;
   background-color: $white;
 
   @include tablet {

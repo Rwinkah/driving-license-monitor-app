@@ -3,200 +3,195 @@
 @import "./theme.scss";
 
 .tablebody {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border: 1px solid #D0D5DD;
-    border-radius: 0.5rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 0.5rem;
 }
 
 .tablebody_title {
-    display: flex;
-    justify-content: space-between;
-    // margin-bottom: 1.5rem;
-    border-bottom: 1px solid #EAECF0;
-    padding: 2rem;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  // margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eaecf0;
+  padding: 2rem;
+  padding-top: 1rem;
 
-    &_header {
+  &_header {
+    h3 {
+      font-family: $Inter;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.875rem;
 
-
-
-        h3 {
-            font-family: $Inter;
-            font-weight: 600;
-            font-size: 1.125rem;
-            line-height: 1.875rem;
-
-            span {
-                border-radius: 0.5rem;
-                background-color: #dff7ed;
-                padding: 0.3rem;
-                color: #027A48;
-                font-weight: 500;
-                font-family: $Inter;
-                font-size: 0.75rem;
-                line-height: 1.125rem;
-            }
-        }
-
-        h6 {
-            font-family: $Inter;
-            font-weight: 400;
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-            color: #475467;
-        }
-    }
-
-    button {
-        width: 6.56rem;
-        height: 2.5rem;
-        background-color: black;
-        color: white;
+      span {
         border-radius: 0.5rem;
+        background-color: #dff7ed;
+        padding: 0.3rem;
+        color: #027a48;
+        font-weight: 500;
         font-family: $Inter;
-        font-weight: 600;
-        line-height: 1.25rem;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+      }
     }
+
+    h6 {
+      font-family: $Inter;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: #475467;
+    }
+  }
+
+  button {
+    width: 6.56rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: $Inter;
+    font-weight: 600;
+    line-height: 1.25rem;
+    font-size: 0.875rem;
+  }
 }
 
 .tablebody_table {
-    table {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+  table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-        tr {
-            width: 100%;
-            display: flex;
-            // justify-content: space-between;
-            gap: 2rem;
-            border: 1px solid #EAECF0;
-            height: 4rem;
-            display: inline-flex;
+    tr {
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+      gap: 2rem;
+      border: 1px solid #eaecf0;
+      height: 4rem;
+      display: inline-flex;
 
-            &._firstrow {
-                border: 1px solid #EAECF0;
-                background-color: #FCFCFD;
-                height: 44px;
-            }
+      &._firstrow {
+        border: 1px solid #eaecf0;
+        background-color: #fcfcfd;
+        height: 44px;
+      }
 
-            td {
-                box-sizing: border-box;
-                padding: 1rem;
-                display: inline-flex;
-                flex-wrap: wrap;
-                // top: 30%;
-                align-content: start;
-                position: relative;
-                box-sizing: border-box;
-                height: 100%;
-            }
+      td {
+        box-sizing: border-box;
+        padding: 1rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        // top: 30%;
+        align-content: flex-start;
+        position: relative;
+        box-sizing: border-box;
+        height: 100%;
+      }
 
-            th {
-                padding-left: 1rem;
-                display: inline-flex;
-                flex-wrap: wrap;
-                top: 30%;
-                align-content: start;
-                position: relative;
-                box-sizing: border-box;
-                height: 2rem;
-                font-family: $Inter;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 18px;
-                letter-spacing: 0em;
-                text-align: left;
-            }
+      th {
+        padding-left: 1rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        top: 30%;
+        align-content: flex-start;
+        position: relative;
+        box-sizing: border-box;
+        height: 2rem;
+        font-family: $Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
 
-            ._name {
-                min-width: 10rem;
-            }
+      ._name {
+        min-width: 10rem;
+      }
 
-            ._docno {
-                min-width: 10rem;
-            }
+      ._docno {
+        min-width: 10rem;
+      }
 
-            ._class {
-                min-width: 5rem;
-            }
+      ._class {
+        min-width: 5rem;
+      }
 
-            ._date1st {
-                min-width: 10rem;
-            }
+      ._date1st {
+        min-width: 10rem;
+      }
 
-            ._dateissue {
-                min-width: 6rem;
-                padding-left: 0;
-            }
+      ._dateissue {
+        min-width: 6rem;
+        padding-left: 0;
+      }
 
-            ._dateexpire {
-                min-width: 6rem;
-                padding-left: 0;
-            }
+      ._dateexpire {
+        min-width: 6rem;
+        padding-left: 0;
+      }
 
-            ._state {
-                min-width: 6rem;
-            }
+      ._state {
+        min-width: 6rem;
+      }
 
-            ._status {
-                min-width: 10.2rem;
-            }
+      ._status {
+        min-width: 10.2rem;
+      }
 
-            ._view {
-                width: 0.1rem;
-                padding-left: 0;
-                border: 0;
-                transform: rotate(90deg);
+      ._view {
+        width: 0.1rem;
+        padding-left: 0;
+        border: 0;
+        transform: rotate(90deg);
 
-                h6 {
-                    width: 1rem;
-                    font-size: 1rem;
-                }
-
-            }
+        h6 {
+          width: 1rem;
+          font-size: 1rem;
         }
+      }
     }
+  }
 }
 
 .tablebody_table_bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding-left: 0.75rem;
+  padding-right: 1rem;
+  // padding-top: 1.5rem;
+  border-top: 1px solid #eaecf0;
+  align-items: center;
+
+  .paging {
     display: flex;
-    justify-content: space-between;
-    height:  4rem;  
-    padding-left: 0.75rem;
-    padding-right: 1rem;
-    // padding-top: 1.5rem;
-    border-top: 1px solid #EAECF0 ;
-    align-items: center;
+    gap: 1rem;
 
-    .paging {
-        display: flex;
-        gap: 1rem;
-    
-            p.pagenum {
-                font-family: $Inter;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
-                letter-spacing: 0em;
-                text-align: left;
-                padding-left: 0.5rem;
-            }
+    p.pagenum {
+      font-family: $Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-left: 0.5rem;
+    }
 
-            button {
-                background-color: white;
-                width: 5.5rem;
-                height: 2.5rem;
-                padding-left: 8px;
-                padding-top: 14px;
-                padding-right: 8px;
-                padding-bottom: 14px;
-                border-radius: 8px;
-                border: 1px solid #D0D5DD;
-                gap: 8px;
-            }
-        }
-
+    button {
+      background-color: white;
+      width: 5.5rem;
+      height: 2.5rem;
+      padding-left: 8px;
+      padding-top: 14px;
+      padding-right: 8px;
+      padding-bottom: 14px;
+      border-radius: 8px;
+      border: 1px solid #d0d5dd;
+      gap: 8px;
+    }
+  }
 }
